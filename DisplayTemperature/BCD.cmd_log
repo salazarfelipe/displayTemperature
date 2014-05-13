@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/BCD.xst" -ofn "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/BCD.syr" 
+xst -intstyle ise -ifn "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/BCD.xst" -ofn "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/BCD.syr" 
+vhdtdtfi -prj DisplayTemperature -o /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/BCD.vhi -module BCD -template /opt/Xilinx/13.3/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work BCD.vhd 

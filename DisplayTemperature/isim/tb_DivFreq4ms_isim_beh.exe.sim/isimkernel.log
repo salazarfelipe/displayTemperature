@@ -1,0 +1,28 @@
+Command line:
+   tb_DivFreq4ms_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  55417
+
+Tue Nov  6 17:12:30 2012
+
+
+ Elaboration Time: 0.04 sec
+
+ Current Memory Usage: 181.428 Meg
+
+ Total Signals          : 7
+ Total Nets             : 4
+ Total Signal Drivers   : 4
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 3
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 365
+
+ Total Simulation Time: 9.83 sec
+
+ Current Memory Usage: 256.93 Meg
+
+Tue Nov  6 17:16:47 2012
+

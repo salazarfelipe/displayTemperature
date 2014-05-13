@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DivFreq4ms.xst" -ofn "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DivFreq4ms.syr" 
+vhdtdtfi -prj DisplayTemperature -o /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DivFreq4ms.vhi -module DivFreq4ms -template /opt/Xilinx/13.3/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work DivFreq4ms.vhd 

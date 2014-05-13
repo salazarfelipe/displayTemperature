@@ -1,0 +1,63 @@
+
+****** PlanAhead v13.3 (64-bit)
+  **** Build 147507 by hdbuild on Tue Oct  4 18:53:13 MDT 2011
+    ** Copyright 1986-1999, 2001-2011 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common-78] Attempting to get a license: PlanAhead
+INFO: [Common-82] Got a license: PlanAhead
+INFO: [Device-25] Loading parts and site information from /opt/Xilinx/13.3/ISE_DS/PlanAhead/parts/arch.xmlParsing RTL primitives file [/opt/Xilinx/13.3/ISE_DS/PlanAhead/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/13.3/ISE_DS/PlanAhead/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+starting gui ...
+source /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/pa.fromHdl.tcl
+# create_project -name DisplayTemperature -dir "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/planAhead_run_2" -part xc3s500efg320-4
+Parsing template File [/opt/Xilinx/13.3/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Finished parsing template File [/opt/Xilinx/13.3/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Parsing template File [/opt/Xilinx/13.3/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Finished parsing template File [/opt/Xilinx/13.3/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Parsing template File [/opt/Xilinx/13.3/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+Finished parsing template File [/opt/Xilinx/13.3/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property top DisplayTemperature $srcset
+# set_property target_constrs_file "DisplayTemperature.ucf" [current_fileset -constrset]
+Adding file '/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DisplayTemperature.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {ModuloTX.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {DivFreq4ms.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {divFreq115200.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {DisplaySelector.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Convertor.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {BCD.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {DisplayTemperature.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# add_files [list {DisplayTemperature.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s500efg320-4
+INFO: [PlanAhead-58] Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/13.3/ISE_DS/PlanAhead/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/opt/Xilinx/13.3/ISE_DS/PlanAhead/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/ModuloTX.vhd" into library work
+Parsing VHDL file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DivFreq4ms.vhd" into library work
+Parsing VHDL file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/divFreq115200.vhd" into library work
+Parsing VHDL file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DisplaySelector.vhd" into library work
+Parsing VHDL file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/Convertor.vhd" into library work
+Parsing VHDL file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/BCD.vhd" into library work
+Parsing VHDL file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DisplayTemperature.vhd" into library work
+INFO: [PlanAhead-430] Reading macro library /opt/Xilinx/13.3/ISE_DS/PlanAhead/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [/opt/Xilinx/13.3/ISE_DS/PlanAhead/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+exit
+stop_gui
+INFO: [PlanAhead-261] Exiting PlanAhead...
+INFO: [Common-83] Releasing license: PlanAhead

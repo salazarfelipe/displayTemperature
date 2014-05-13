@@ -1,0 +1,31 @@
+//! **************************************************************************
+// Written by: Map O.76xd on Wed Dec 12 13:22:41 2012
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "DisplayRep<0>" LOCATE = SITE "C17" LEVEL 1;
+COMP "DisplayRep<1>" LOCATE = SITE "H14" LEVEL 1;
+COMP "DisplayRep<2>" LOCATE = SITE "J17" LEVEL 1;
+COMP "DisplayRep<3>" LOCATE = SITE "G14" LEVEL 1;
+COMP "DisplayRep<4>" LOCATE = SITE "D16" LEVEL 1;
+COMP "DisplayRep<5>" LOCATE = SITE "D17" LEVEL 1;
+COMP "DisplayRep<6>" LOCATE = SITE "F18" LEVEL 1;
+COMP "DisplayRep<7>" LOCATE = SITE "L18" LEVEL 1;
+COMP "clkFPGA" LOCATE = SITE "B8" LEVEL 1;
+COMP "reset" LOCATE = SITE "H13" LEVEL 1;
+COMP "serialOut" LOCATE = SITE "P9" LEVEL 1;
+COMP "Temperature<0>" LOCATE = SITE "G18" LEVEL 1;
+COMP "Temperature<1>" LOCATE = SITE "H18" LEVEL 1;
+COMP "Temperature<2>" LOCATE = SITE "K18" LEVEL 1;
+COMP "Temperature<3>" LOCATE = SITE "K17" LEVEL 1;
+COMP "Temperature<4>" LOCATE = SITE "L14" LEVEL 1;
+COMP "Temperature<5>" LOCATE = SITE "L13" LEVEL 1;
+COMP "Temperature<6>" LOCATE = SITE "N17" LEVEL 1;
+COMP "Temperature<7>" LOCATE = SITE "R17" LEVEL 1;
+COMP "enableLed<0>" LOCATE = SITE "F17" LEVEL 1;
+COMP "enableLed<1>" LOCATE = SITE "H17" LEVEL 1;
+COMP "enableLed<2>" LOCATE = SITE "C18" LEVEL 1;
+COMP "enableLed<3>" LOCATE = SITE "F15" LEVEL 1;
+NET "clkFPGA_BUFGP/IBUFG" BEL "clkFPGA_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

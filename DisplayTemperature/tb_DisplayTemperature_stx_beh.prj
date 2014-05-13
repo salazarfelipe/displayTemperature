@@ -1,0 +1,6 @@
+vhdl isim_temp "DivFreq4ms.vhd"
+vhdl isim_temp "DisplaySelector.vhd"
+vhdl isim_temp "Convertor.vhd"
+vhdl isim_temp "BCD.vhd"
+vhdl isim_temp "DisplayTemperature.vhd"
+vhdl isim_temp "tb_DisplayTemperature.vhd"

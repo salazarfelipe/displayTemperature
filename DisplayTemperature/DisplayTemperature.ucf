@@ -1,0 +1,26 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "DisplayRep[0]" LOC = C17;
+NET "DisplayRep[1]" LOC = H14;
+NET "DisplayRep[2]" LOC = J17;
+NET "DisplayRep[3]" LOC = G14;
+NET "DisplayRep[4]" LOC = D16;
+NET "DisplayRep[5]" LOC = D17;
+NET "DisplayRep[6]" LOC = F18;
+NET "DisplayRep[7]" LOC = L18;
+NET "Temperature[0]" LOC = G18;
+NET "Temperature[1]" LOC = H18;
+NET "Temperature[2]" LOC = K18;
+NET "Temperature[3]" LOC = K17;
+NET "Temperature[4]" LOC = L14;
+NET "Temperature[5]" LOC = L13;
+NET "Temperature[6]" LOC = N17;
+NET "Temperature[7]" LOC = R17;
+NET "clkFPGA" LOC = B8;
+NET "enableLed[0]" LOC = F17;
+NET "enableLed[1]" LOC = H17;
+NET "enableLed[2]" LOC = C18;
+NET "enableLed[3]" LOC = F15;
+NET "reset" LOC = H13;
+NET "serialOut" LOC = P9;

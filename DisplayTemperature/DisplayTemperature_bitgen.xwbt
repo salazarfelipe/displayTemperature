@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DisplayTemperature.ncd
+OUTFILE=/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DisplayTemperature.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature
+LICENSE=WebPack
+USER_INFO=__0_0_0

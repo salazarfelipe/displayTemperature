@@ -1,0 +1,1 @@
+vhdtdtfi -prj DisplayTemperature -o /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/ModuloTX.vhi -module ModuloTX -template /opt/Xilinx/13.3/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ModuloTX.vhd 

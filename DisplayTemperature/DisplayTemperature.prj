@@ -1,0 +1,7 @@
+vhdl work "ModuloTX.vhd"
+vhdl work "DivFreq4ms.vhd"
+vhdl work "divFreq115200.vhd"
+vhdl work "DisplaySelector.vhd"
+vhdl work "Convertor.vhd"
+vhdl work "BCD.vhd"
+vhdl work "DisplayTemperature.vhd"

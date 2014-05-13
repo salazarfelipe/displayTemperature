@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/Convertor.xst" -ofn "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/Convertor.syr" 
+xst -intstyle ise -ifn "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/Convertor.xst" -ofn "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/Convertor.syr" 
+xst -intstyle ise -ifn "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/Convertor.xst" -ofn "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/Convertor.syr" 
+xst -intstyle ise -ifn "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/Convertor.xst" -ofn "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/Convertor.syr" 
+vhdtdtfi -prj DisplayTemperature -o /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/Convertor.vhi -module Convertor -template /opt/Xilinx/13.3/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Convertor.vhd 

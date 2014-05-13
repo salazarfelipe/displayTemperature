@@ -1,0 +1,28 @@
+Command line:
+   tb_DisplayTemperature_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  45325
+
+Wed Dec  5 14:53:15 2012
+
+
+ Elaboration Time: 0.04 sec
+
+ Current Memory Usage: 181.51 Meg
+
+ Total Signals          : 58
+ Total Nets             : 70
+ Total Signal Drivers   : 23
+ Total Blocks           : 13
+ Total Primitive Blocks : 11
+ Total Processes        : 10
+ Total Traceable Variables  : 11
+ Total Scalar Nets and Variables : 449
+
+ Total Simulation Time: 3.45 sec
+
+ Current Memory Usage: 257.012 Meg
+
+Wed Dec  5 14:57:44 2012
+

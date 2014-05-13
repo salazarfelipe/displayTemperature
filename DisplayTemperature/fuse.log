@@ -1,0 +1,36 @@
+Running: /opt/Xilinx/13.3/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/tb_DisplayTemperature_isim_beh.exe -prj /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/tb_DisplayTemperature_beh.prj work.tb_DisplayTemperature 
+ISim O.76xd (signature 0x8ddf5b5d)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/ModuloTX.vhd" into library work
+Parsing VHDL file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DivFreq4ms.vhd" into library work
+Parsing VHDL file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/divFreq115200.vhd" into library work
+Parsing VHDL file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DisplaySelector.vhd" into library work
+Parsing VHDL file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/Convertor.vhd" into library work
+Parsing VHDL file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/BCD.vhd" into library work
+Parsing VHDL file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DisplayTemperature.vhd" into library work
+Parsing VHDL file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/tb_DisplayTemperature.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 95976 KB
+Fuse CPU Usage: 1570 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture arch_convertor of entity Convertor [convertor_default]
+Compiling architecture arch_bcd of entity BCD [bcd_default]
+Compiling architecture arch_divfreq4ms of entity DivFreq4ms [divfreq4ms_default]
+Compiling architecture arch_displayselector of entity DisplaySelector [displayselector_default]
+Compiling architecture arch_divfreq115200 of entity divFreq115200 [divfreq115200_default]
+Compiling architecture arch_modultx of entity ModuloTX [modulotx_default]
+Compiling architecture arch_displaytemperature of entity DisplayTemperature [displaytemperature_default]
+Compiling architecture behavior of entity tb_displaytemperature
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 19 VHDL Units
+Built simulation executable /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/tb_DisplayTemperature_isim_beh.exe
+Fuse Memory Usage: 406240 KB
+Fuse CPU Usage: 1690 ms
+GCC CPU Usage: 520 ms

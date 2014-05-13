@@ -1,0 +1,6 @@
+work	"BCD.vhd"
+work	"DisplaySelector.vhd"
+work	"DisplayTemperature.vhd"
+work	"DivFreq4ms.vhd"
+work	"ModuloTX.vhd"
+work	"divFreq115200.vhd"

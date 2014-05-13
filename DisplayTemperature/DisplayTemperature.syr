@@ -1,0 +1,720 @@
+Release 13.3 - xst O.76xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: DisplayTemperature.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DisplayTemperature.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DisplayTemperature"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : DisplayTemperature
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/Convertor.vhd" in Library work.
+Architecture arch_convertor of Entity convertor is up to date.
+Compiling vhdl file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/BCD.vhd" in Library work.
+Architecture arch_bcd of Entity bcd is up to date.
+Compiling vhdl file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DivFreq4ms.vhd" in Library work.
+Architecture arch_divfreq4ms of Entity divfreq4ms is up to date.
+Compiling vhdl file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DisplaySelector.vhd" in Library work.
+Architecture arch_displayselector of Entity displayselector is up to date.
+Compiling vhdl file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/divFreq115200.vhd" in Library work.
+Architecture arch_divfreq115200 of Entity divfreq115200 is up to date.
+Compiling vhdl file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/ModuloTX.vhd" in Library work.
+Entity <modulotx> compiled.
+Entity <modulotx> (Architecture <arch_modultx>) compiled.
+Compiling vhdl file "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DisplayTemperature.vhd" in Library work.
+Architecture arch_displaytemperature of Entity displaytemperature is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <DisplayTemperature> in library <work> (architecture <arch_displaytemperature>).
+
+Analyzing hierarchy for entity <Convertor> in library <work> (architecture <arch_convertor>).
+
+Analyzing hierarchy for entity <BCD> in library <work> (architecture <arch_bcd>).
+
+Analyzing hierarchy for entity <DivFreq4ms> in library <work> (architecture <arch_divfreq4ms>).
+
+Analyzing hierarchy for entity <DisplaySelector> in library <work> (architecture <arch_displayselector>).
+
+Analyzing hierarchy for entity <divFreq115200> in library <work> (architecture <arch_divfreq115200>).
+
+Analyzing hierarchy for entity <ModuloTX> in library <work> (architecture <arch_modultx>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <DisplayTemperature> in library <work> (Architecture <arch_displaytemperature>).
+Entity <DisplayTemperature> analyzed. Unit <DisplayTemperature> generated.
+
+Analyzing Entity <Convertor> in library <work> (Architecture <arch_convertor>).
+Entity <Convertor> analyzed. Unit <Convertor> generated.
+
+Analyzing Entity <BCD> in library <work> (Architecture <arch_bcd>).
+Entity <BCD> analyzed. Unit <BCD> generated.
+
+Analyzing Entity <DivFreq4ms> in library <work> (Architecture <arch_divfreq4ms>).
+Entity <DivFreq4ms> analyzed. Unit <DivFreq4ms> generated.
+
+Analyzing Entity <DisplaySelector> in library <work> (Architecture <arch_displayselector>).
+Entity <DisplaySelector> analyzed. Unit <DisplaySelector> generated.
+
+Analyzing Entity <divFreq115200> in library <work> (Architecture <arch_divfreq115200>).
+Entity <divFreq115200> analyzed. Unit <divFreq115200> generated.
+
+Analyzing Entity <ModuloTX> in library <work> (Architecture <arch_modultx>).
+Entity <ModuloTX> analyzed. Unit <ModuloTX> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Convertor>.
+    Related source file is "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/Convertor.vhd".
+    Found 4-bit register for signal <UND>.
+    Found 4-bit register for signal <CENT>.
+    Found 4-bit register for signal <DEC>.
+    Found 32-bit register for signal <aux_Centenas>.
+    Found 32-bit adder for signal <aux_Centenas$addsub0000> created at line 40.
+    Found 32-bit comparator greatequal for signal <aux_Centenas$cmp_ge0000> created at line 38.
+    Found 32-bit comparator less for signal <aux_Centenas$cmp_lt0000> created at line 38.
+    Found 32-bit register for signal <aux_Decenas>.
+    Found 32-bit adder for signal <aux_Decenas$addsub0000> created at line 44.
+    Found 32-bit register for signal <auxTemperature>.
+    Found 32-bit 4-to-1 multiplexer for signal <auxTemperature$mux0000>.
+    Found 32-bit subtractor for signal <auxTemperature$share0000>.
+    Found 1-bit register for signal <flag>.
+    Found 32-bit comparator greatequal for signal <flag$cmp_ge0000> created at line 46.
+    Found 32-bit comparator less for signal <UND$cmp_lt0000> created at line 46.
+    Summary:
+	inferred 109 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+	inferred  32 Multiplexer(s).
+Unit <Convertor> synthesized.
+
+
+Synthesizing Unit <BCD>.
+    Related source file is "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/BCD.vhd".
+    Found 16x8-bit ROM for signal <DisplayRep>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <BCD> synthesized.
+
+
+Synthesizing Unit <DivFreq4ms>.
+    Related source file is "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DivFreq4ms.vhd".
+    Found 1-bit register for signal <enable4ms>.
+    Found 32-bit up counter for signal <cont>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <DivFreq4ms> synthesized.
+
+
+Synthesizing Unit <DisplaySelector>.
+    Related source file is "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DisplaySelector.vhd".
+    Found 8-bit register for signal <DisplayRep>.
+    Found 4-bit register for signal <enableLed>.
+    Found 32-bit up counter for signal <cont>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  12 D-type flip-flop(s).
+Unit <DisplaySelector> synthesized.
+
+
+Synthesizing Unit <divFreq115200>.
+    Related source file is "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/divFreq115200.vhd".
+    Found 1-bit register for signal <enable115200>.
+    Found 9-bit up counter for signal <contador>.
+    Found 9-bit comparator greatequal for signal <contador$cmp_ge0000> created at line 31.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <divFreq115200> synthesized.
+
+
+Synthesizing Unit <ModuloTX>.
+    Related source file is "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/ModuloTX.vhd".
+    Found finite state machine <FSM_0> for signal <tarea>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 3                                              |
+    | Clock              | enable115200              (rising_edge)        |
+    | Clock enable       | reset                     (negative)           |
+    | Power Up State     | 01                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <serialOut>.
+    Found 3-bit up counter for signal <indice>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <ModuloTX> synthesized.
+
+
+Synthesizing Unit <DisplayTemperature>.
+    Related source file is "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DisplayTemperature.vhd".
+Unit <DisplayTemperature> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 16x8-bit ROM                                          : 3
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit subtractor                                     : 1
+# Counters                                             : 4
+ 3-bit up counter                                      : 1
+ 32-bit up counter                                     : 2
+ 9-bit up counter                                      : 1
+# Registers                                            : 12
+ 1-bit register                                        : 4
+ 32-bit register                                       : 3
+ 4-bit register                                        : 4
+ 8-bit register                                        : 1
+# Comparators                                          : 5
+ 32-bit comparator greatequal                          : 2
+ 32-bit comparator less                                : 2
+ 9-bit comparator greatequal                           : 1
+# Multiplexers                                         : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <Inst_ModuloTX/tarea/FSM> on signal <tarea[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 01    | 00
+ 10    | 11
+ 11    | 01
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 3
+ 16x8-bit ROM                                          : 3
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit subtractor                                     : 1
+# Counters                                             : 4
+ 3-bit up counter                                      : 1
+ 32-bit up counter                                     : 2
+ 9-bit up counter                                      : 1
+# Registers                                            : 124
+ Flip-Flops                                            : 124
+# Comparators                                          : 5
+ 32-bit comparator greatequal                          : 2
+ 32-bit comparator less                                : 2
+ 9-bit comparator greatequal                           : 1
+# Multiplexers                                         : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <aux_Decenas_4> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_5> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_6> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_7> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_8> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_9> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_10> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_11> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_12> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_13> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_14> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_15> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_16> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_17> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_18> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_19> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_20> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_21> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_22> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_23> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_24> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_25> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_26> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_27> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_28> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_29> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_30> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Decenas_31> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_4> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_5> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_6> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_7> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_8> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_9> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_10> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_11> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_12> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_13> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_14> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_15> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_16> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_17> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_18> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_19> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_20> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_21> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_22> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_23> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_24> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_25> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_26> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_27> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_28> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_29> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_30> of sequential type is unconnected in block <Convertor>.
+WARNING:Xst:2677 - Node <aux_Centenas_31> of sequential type is unconnected in block <Convertor>.
+
+Optimizing unit <DisplayTemperature> ...
+
+Optimizing unit <Convertor> ...
+
+Optimizing unit <DisplaySelector> ...
+
+Optimizing unit <ModuloTX> ...
+WARNING:Xst:1710 - FF/Latch <Inst_DisplaySelector/DisplayRep_0> (without init value) has a constant value of 1 in block <DisplayTemperature>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DisplayTemperature, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 145
+ Flip-Flops                                            : 145
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : DisplayTemperature.ngr
+Top Level Output File Name         : DisplayTemperature
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 23
+
+Cell Usage :
+# BELS                             : 517
+#      GND                         : 1
+#      INV                         : 36
+#      LUT1                        : 71
+#      LUT2                        : 11
+#      LUT2_L                      : 2
+#      LUT3                        : 48
+#      LUT3_D                      : 1
+#      LUT3_L                      : 1
+#      LUT4                        : 80
+#      LUT4_D                      : 1
+#      LUT4_L                      : 2
+#      MUXCY                       : 143
+#      MUXF5                       : 7
+#      VCC                         : 1
+#      XORCY                       : 112
+# FlipFlops/Latches                : 145
+#      FDC                         : 11
+#      FDCE                        : 3
+#      FDE                         : 55
+#      FDR                         : 32
+#      FDRE                        : 32
+#      FDSE                        : 12
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 22
+#      IBUF                        : 9
+#      OBUF                        : 13
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      136  out of   4656     2%  
+ Number of Slice Flip Flops:            145  out of   9312     1%  
+ Number of 4 input LUTs:                253  out of   9312     2%  
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    232     9%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)       | Load  |
+-----------------------------------+-----------------------------+-------+
+clkFPGA                            | BUFGP                       | 139   |
+Inst_divFreq115200/enable115200    | NONE(Inst_ModuloTX/indice_2)| 6     |
+-----------------------------------+-----------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 14    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.950ns (Maximum Frequency: 100.499MHz)
+   Minimum input arrival time before clock: 5.532ns
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkFPGA'
+  Clock period: 9.950ns (frequency: 100.499MHz)
+  Total number of paths / destination ports: 18373 / 299
+-------------------------------------------------------------------------
+Delay:               9.950ns (Levels of Logic = 45)
+  Source:            Inst_Convertor/auxTemperature_1 (FF)
+  Destination:       Inst_Convertor/auxTemperature_31 (FF)
+  Source Clock:      clkFPGA rising
+  Destination Clock: clkFPGA rising
+
+  Data Path: Inst_Convertor/auxTemperature_1 to Inst_Convertor/auxTemperature_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.591   0.706  Inst_Convertor/auxTemperature_1 (Inst_Convertor/auxTemperature_1)
+     LUT1:I0->O            1   0.704   0.000  Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<0>_0_rt (Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<0>_0_rt)
+     MUXCY:S->O            1   0.464   0.000  Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<0>_0 (Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<0>1)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<1>_0 (Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<1>1)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<2>_0 (Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<2>1)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<3>_0 (Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<3>1)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<4>_0 (Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<4>1)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<5>_0 (Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<5>1)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<6>_0 (Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<6>1)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<7>_0 (Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<7>1)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<8>_0 (Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<8>1)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<9>_0 (Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<9>)
+     MUXCY:CI->O          45   0.459   1.345  Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<10> (Inst_Convertor/Mcompar_aux_Centenas_cmp_ge0000_cy<10>)
+     LUT3:I1->O            1   0.704   0.000  Inst_Convertor/Msub_auxTemperature_share0000_lut<1> (Inst_Convertor/Msub_auxTemperature_share0000_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<1> (Inst_Convertor/Msub_auxTemperature_share0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<2> (Inst_Convertor/Msub_auxTemperature_share0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<3> (Inst_Convertor/Msub_auxTemperature_share0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<4> (Inst_Convertor/Msub_auxTemperature_share0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<5> (Inst_Convertor/Msub_auxTemperature_share0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<6> (Inst_Convertor/Msub_auxTemperature_share0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<7> (Inst_Convertor/Msub_auxTemperature_share0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<8> (Inst_Convertor/Msub_auxTemperature_share0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<9> (Inst_Convertor/Msub_auxTemperature_share0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<10> (Inst_Convertor/Msub_auxTemperature_share0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<11> (Inst_Convertor/Msub_auxTemperature_share0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<12> (Inst_Convertor/Msub_auxTemperature_share0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<13> (Inst_Convertor/Msub_auxTemperature_share0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<14> (Inst_Convertor/Msub_auxTemperature_share0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<15> (Inst_Convertor/Msub_auxTemperature_share0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<16> (Inst_Convertor/Msub_auxTemperature_share0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<17> (Inst_Convertor/Msub_auxTemperature_share0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<18> (Inst_Convertor/Msub_auxTemperature_share0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<19> (Inst_Convertor/Msub_auxTemperature_share0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<20> (Inst_Convertor/Msub_auxTemperature_share0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<21> (Inst_Convertor/Msub_auxTemperature_share0000_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<22> (Inst_Convertor/Msub_auxTemperature_share0000_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<23> (Inst_Convertor/Msub_auxTemperature_share0000_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<24> (Inst_Convertor/Msub_auxTemperature_share0000_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<25> (Inst_Convertor/Msub_auxTemperature_share0000_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<26> (Inst_Convertor/Msub_auxTemperature_share0000_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<27> (Inst_Convertor/Msub_auxTemperature_share0000_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<28> (Inst_Convertor/Msub_auxTemperature_share0000_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<29> (Inst_Convertor/Msub_auxTemperature_share0000_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  Inst_Convertor/Msub_auxTemperature_share0000_cy<30> (Inst_Convertor/Msub_auxTemperature_share0000_cy<30>)
+     XORCY:CI->O           1   0.804   0.455  Inst_Convertor/Msub_auxTemperature_share0000_xor<31> (Inst_Convertor/auxTemperature_share0000<31>)
+     LUT3:I2->O            1   0.704   0.000  Inst_Convertor/Mmux_auxTemperature_mux0000281 (Inst_Convertor/auxTemperature_mux0000<31>)
+     FDE:D                     0.308          Inst_Convertor/auxTemperature_31
+    ----------------------------------------
+    Total                      9.950ns (7.444ns logic, 2.506ns route)
+                                       (74.8% logic, 25.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_divFreq115200/enable115200'
+  Clock period: 4.248ns (frequency: 235.405MHz)
+  Total number of paths / destination ports: 35 / 9
+-------------------------------------------------------------------------
+Delay:               4.248ns (Levels of Logic = 4)
+  Source:            Inst_ModuloTX/indice_2 (FF)
+  Destination:       Inst_ModuloTX/serialOut (FF)
+  Source Clock:      Inst_divFreq115200/enable115200 rising
+  Destination Clock: Inst_divFreq115200/enable115200 rising
+
+  Data Path: Inst_ModuloTX/indice_2 to Inst_ModuloTX/serialOut
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.591   0.844  Inst_ModuloTX/indice_2 (Inst_ModuloTX/indice_2)
+     LUT3:I0->O            1   0.704   0.000  Inst_ModuloTX/serialOut_mux000084_F (N38)
+     MUXF5:I0->O           1   0.321   0.455  Inst_ModuloTX/serialOut_mux000084 (Inst_ModuloTX/serialOut_mux000084)
+     LUT4:I2->O            1   0.704   0.000  Inst_ModuloTX/serialOut_mux00001401 (Inst_ModuloTX/serialOut_mux0000140)
+     MUXF5:I1->O           1   0.321   0.000  Inst_ModuloTX/serialOut_mux0000140_f5 (Inst_ModuloTX/serialOut_mux0000)
+     FDC:D                     0.308          Inst_ModuloTX/serialOut
+    ----------------------------------------
+    Total                      4.248ns (2.949ns logic, 1.299ns route)
+                                       (69.4% logic, 30.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkFPGA'
+  Total number of paths / destination ports: 94 / 94
+-------------------------------------------------------------------------
+Offset:              5.532ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       Inst_DivFreq4ms/cont_0 (FF)
+  Destination Clock: clkFPGA rising
+
+  Data Path: reset to Inst_DivFreq4ms/cont_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            32   1.218   1.437  reset_IBUF (reset_IBUF)
+     LUT2:I0->O           32   0.704   1.262  Inst_DivFreq4ms/cont_or00001 (Inst_DivFreq4ms/cont_or0000)
+     FDR:R                     0.911          Inst_DivFreq4ms/cont_0
+    ----------------------------------------
+    Total                      5.532ns (2.833ns logic, 2.699ns route)
+                                       (51.2% logic, 48.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_divFreq115200/enable115200'
+  Total number of paths / destination ports: 10 / 3
+-------------------------------------------------------------------------
+Offset:              4.557ns (Levels of Logic = 5)
+  Source:            Temperature<0> (PAD)
+  Destination:       Inst_ModuloTX/serialOut (FF)
+  Destination Clock: Inst_divFreq115200/enable115200 rising
+
+  Data Path: Temperature<0> to Inst_ModuloTX/serialOut
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.526  Temperature_0_IBUF (Temperature_0_IBUF)
+     LUT3:I1->O            1   0.704   0.000  Inst_ModuloTX/serialOut_mux000084_F (N38)
+     MUXF5:I0->O           1   0.321   0.455  Inst_ModuloTX/serialOut_mux000084 (Inst_ModuloTX/serialOut_mux000084)
+     LUT4:I2->O            1   0.704   0.000  Inst_ModuloTX/serialOut_mux00001401 (Inst_ModuloTX/serialOut_mux0000140)
+     MUXF5:I1->O           1   0.321   0.000  Inst_ModuloTX/serialOut_mux0000140_f5 (Inst_ModuloTX/serialOut_mux0000)
+     FDC:D                     0.308          Inst_ModuloTX/serialOut
+    ----------------------------------------
+    Total                      4.557ns (3.576ns logic, 0.981ns route)
+                                       (78.5% logic, 21.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_divFreq115200/enable115200'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            Inst_ModuloTX/serialOut (FF)
+  Destination:       serialOut (PAD)
+  Source Clock:      Inst_divFreq115200/enable115200 rising
+
+  Data Path: Inst_ModuloTX/serialOut to serialOut
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.591   0.420  Inst_ModuloTX/serialOut (Inst_ModuloTX/serialOut)
+     OBUF:I->O                 3.272          serialOut_OBUF (serialOut)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkFPGA'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            Inst_DisplaySelector/DisplayRep_7 (FF)
+  Destination:       DisplayRep<7> (PAD)
+  Source Clock:      clkFPGA rising
+
+  Data Path: Inst_DisplaySelector/DisplayRep_7 to DisplayRep<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.420  Inst_DisplaySelector/DisplayRep_7 (Inst_DisplaySelector/DisplayRep_7)
+     OBUF:I->O                 3.272          DisplayRep_7_OBUF (DisplayRep<7>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.43 secs
+ 
+--> 
+
+
+Total memory usage is 521740 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   57 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

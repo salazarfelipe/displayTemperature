@@ -1,0 +1,9 @@
+[Inputs]
+clkFPGA
+reset
+=Temperature[7:0]=
+[Outputs]
+serialOut
+=DisplayRep[7:0]=
+=enableLed[3:0]=
+[BiDir]

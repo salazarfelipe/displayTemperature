@@ -1,0 +1,1 @@
+vhdtdtfi -prj DisplayTemperature -o /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DisplaySelector.vhi -module DisplaySelector -template /opt/Xilinx/13.3/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work DisplaySelector.vhd 

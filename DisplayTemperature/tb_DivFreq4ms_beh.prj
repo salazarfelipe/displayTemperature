@@ -1,0 +1,2 @@
+vhdl work "DivFreq4ms.vhd"
+vhdl work "tb_DivFreq4ms.vhd"

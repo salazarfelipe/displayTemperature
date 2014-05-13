@@ -1,0 +1,5 @@
+set -tmpdir "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/xst/projnav.tmp"
+set -xsthdpdir "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/xst"
+elaborate
+-ifn Convertor.prj
+-ifmt mixed

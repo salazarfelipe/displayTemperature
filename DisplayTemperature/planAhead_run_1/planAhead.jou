@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# PlanAhead v13.3 (64-bit)
+# Build 147507 by hdbuild on Tue Oct  4 18:53:13 MDT 2011
+# Start of session at: Wed Dec 12 13:21:38 2012
+# Process ID: 3432
+# Log file: /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/planAhead_run_1/planAhead.log
+# Journal file: /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/pa.fromHdl.tcl
+exit
+stop_gui

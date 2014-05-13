@@ -1,0 +1,14 @@
+AR displaytemperature arch_displaytemperature /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DisplayTemperature.vhd sub00/vhpl09 1355336485
+EN divfreq115200 NULL /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/divFreq115200.vhd sub00/vhpl10 1355336480
+AR divfreq4ms arch_divfreq4ms /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DivFreq4ms.vhd sub00/vhpl05 1355336477
+EN displaytemperature NULL /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DisplayTemperature.vhd sub00/vhpl08 1355336484
+AR modulotx arch_modultx /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/ModuloTX.vhd sub00/vhpl13 1355336483
+EN divfreq4ms NULL /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DivFreq4ms.vhd sub00/vhpl04 1355336476
+AR displayselector arch_displayselector /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DisplaySelector.vhd sub00/vhpl07 1355336479
+EN bcd NULL /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/BCD.vhd sub00/vhpl02 1355336474
+EN modulotx NULL /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/ModuloTX.vhd sub00/vhpl12 1355336482
+AR bcd arch_bcd /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/BCD.vhd sub00/vhpl03 1355336475
+EN convertor NULL /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/Convertor.vhd sub00/vhpl00 1355336472
+AR divfreq115200 arch_divfreq115200 /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/divFreq115200.vhd sub00/vhpl11 1355336481
+EN displayselector NULL /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/DisplaySelector.vhd sub00/vhpl06 1355336478
+AR convertor arch_convertor /home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/Convertor.vhd sub00/vhpl01 1355336473

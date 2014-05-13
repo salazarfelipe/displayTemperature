@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/tb_DisplayTemperature_isim_beh.exe" -prj "/home/felipe/Documentos/UTP/Electronica2/DisplayTemperature/tb_DisplayTemperature_beh.prj" "work.tb_DisplayTemperature" 

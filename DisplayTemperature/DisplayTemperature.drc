@@ -1,0 +1,8 @@
+Release 13.3 Drc O.76xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Wed Dec 12 13:23:13 2012
+
+drc -z DisplayTemperature.ncd DisplayTemperature.pcf
+
+DRC detected 0 errors and 0 warnings.
